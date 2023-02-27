@@ -1,0 +1,12 @@
+<h1>Reading List</h1>
+
+<ul>
+  {{#Books}}
+    <li>{{title}}</li>
+  {{/Books}}
+</ul>
+
+<form action="/new-book" method="post">
+    <input type="text" name="title">
+    <button type="submit">Submit Book</button>
+</form>
